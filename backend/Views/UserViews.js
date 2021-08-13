@@ -86,12 +86,12 @@ exports.LoginUser = async (req, res) => {
 
 exports.LogoutUser = async (req, res) => {
   try {
-    const { email } = req.body;
-    if (!email) {
-      res.status(400).send("Email field missing");
+    const id = req.params.id;
+    if (!id) {
+      res.status(400).send("Id not found");
     }
 
-    const user = await User.findOne({ email });
+    const user = await User.findOne({ _id: id });
     if (user) {
       user.token = null;
       user.save();

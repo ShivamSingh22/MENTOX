@@ -8,6 +8,6 @@ router.get("/", userViews.baseRoute);
 router.post("/user/register", userViews.RegisterUser);
 router.get("/user", userViews.GetUserDetails);
 router.post("/user/login", userViews.LoginUser);
-router.post("/user/logout", userViews.LogoutUser);
+router.get("/user/logout/:id", userViews.LogoutUser);
 
 module.exports = router;
