@@ -1,8 +1,8 @@
 import React, { useState } from 'react'
-import { Button } from './Components/Button';
+import { Button } from './Button';
 import { Link } from 'react-router-dom';
 import './Navbar.css';
-import Dropdown from './Components/Dropdown.js';
+import Dropdown from './Dropdown.js';
 function Navbar() {
     const [click, setClick] = useState(false);
     const [dropdown, setdropdown] = useState(false);
@@ -61,7 +61,7 @@ function Navbar() {
                         </Link>
                     </li>
                 </ul>
-                <Button />
+                <Button id="Navbar-btn" />
             </nav>
         </>
     );
