@@ -1,5 +1,7 @@
+import { API } from "../backend";
+
 export const signup = (user) => {
-  return fetch(`/user/register`, {
+  return fetch(`${API}/user/register`, {
     method: "POST",
     /*headers: {
       Accept: "application/json",
@@ -15,11 +17,13 @@ export const signup = (user) => {
 
 //Signing in existing user
 export const signin = (user) => {
-  return fetch(`/user/login`, {
+  return fetch(`${API}/user/login`, {
     method: "POST",
+    headers: { "Content-Type": "application/json" },
     body: JSON.stringify(user),
   })
     .then((response) => {
+      console.log(response);
       return response.json();
     })
     .catch((err) => console.log(err));
@@ -48,11 +52,11 @@ export const IsAuthenticated = () => {
 
 export const signout = () => {
   //Getting the user Id by checking if he is authenticated
-  var userId = IsAuthenticated() && IsAuthenticated().user._id;
+  var userId = IsAuthenticated() && IsAuthenticated()._id;
   if (typeof window !== undefined) {
     //Removing jwt from localstorage
     localStorage.removeItem("jwt");
-    return fetch(`/user/logout/${userId}`, {
+    return fetch(`${API}/user/logout/${userId}`, {
       method: `GET`,
     })
       .then(() => console.log("Logged out successfully"))

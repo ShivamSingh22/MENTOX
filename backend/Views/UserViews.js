@@ -62,7 +62,7 @@ exports.LoginUser = async (req, res) => {
     const { email, username, password } = req.body;
 
     if (!(email, password, username)) {
-      res.status(400).send("All input is required");
+      return res.status(400).send("All input is required");
     }
 
     const user = await User.findOne({ email });
