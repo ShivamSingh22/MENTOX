@@ -1,9 +1,12 @@
 import React from 'react';
-import Navbar from '../../Navbar';
+import Navbar from '../Navbar';
+import Footer from '../Footer';
 export default function SignUp(){
-    return (<div>
+    return (
+        <>
         <Navbar />
         <h1 className="Sign-up">Sign Up</h1>
-        </div>
+        <Footer />
+        </>
     )
 }

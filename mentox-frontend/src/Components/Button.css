@@ -1,24 +1,24 @@
 :root {
-  --primary: rgba(75, 93, 155, 1);
-}
-
-.btn {
-  padding: 10px 20px;
-  border-radius: 0px;
-  outline: none;
-  border: none;
-  font-size: 18px;
-  color: rgb(234, 239, 243);
-  cursor: pointer;
-  background-color: rgba(75, 93, 155, 1);
-}
-
-.btn:hover {
-  padding: 10px 18px;
-  transition: all 0.3s ease-out;
-  background-color: transparent;
-  color: rgb(110, 98, 165);
-  border-radius: 0px;
-  border: 2px solid rgba(75, 93, 155, 1);
-  transition: all 0.3s ease-out;
-}
+    --primary: rgba(75, 93, 155, 1);
+  }
+  
+  .btn {
+    padding: 10px 20px;
+    border-radius: 0px;
+    outline: none;
+    border: none;
+    font-size: 18px;
+    color: #fff;
+    cursor: pointer;
+    background-color: rgba(75, 93, 155, 1);
+  }
+  
+  .btn:hover {
+    padding: 10px 18px;
+    transition: all 0.3s ease-out;
+    background-color: transparent;
+    color: #fff;
+    border-radius: 0px;
+    border: 2px solid rgba(75, 93, 155, 1);
+    transition: all 0.3s ease-out;
+  }
