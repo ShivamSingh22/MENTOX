@@ -13,8 +13,10 @@ mongoose.connection.on("error", (err) => {
 });
 
 require("./Models/UserModel.js");
+require("./Models/PatientModel");
+require("./Models/VolunteerModel");
 
 const app = require("./index.js");
-const server = app.listen(3000, () => {
+const server = app.listen(4000, () => {
   console.log(`Express server is up and running on ${server.address().port}`);
 });

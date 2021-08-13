@@ -1,24 +1,27 @@
 import React from 'react';
 import TextField from '@material-ui/core/TextField';
 import { makeStyles } from '@material-ui/core/styles';
-import { Grid, Paper, Typography, Button } from '@material-ui/core';
+import { Grid, Paper, Avatar, Button, Typography } from '@material-ui/core';
 import Radio from '@material-ui/core/Radio';
 import RadioGroup from '@material-ui/core/RadioGroup';
 import FormControlLabel from '@material-ui/core/FormControlLabel';
 import FormControl from '@material-ui/core/FormControl';
 import FormLabel from '@material-ui/core/FormLabel';
+import AccountCircleIcon from '@material-ui/icons/AccountCircle';
+import { Link } from 'react-router-dom';
 
 
-
+const avatarStyle = { backgroundColor: "#rgb777" };
 const useStyles = makeStyles((theme) => ({
     root: {
+
         '& .MuiTextField-root': {
             margin: theme.spacing(1),
-            width: '50vh',
+            width: '50vh'
         }
     },
     container: {
-        marginTop:'',
+        margin: '15vh 0 20vh 0',
         width: '100vh',
         alignSelf: 'center',
         height: '100%',
@@ -35,10 +38,12 @@ export default function SignUp() {
     const classes = useStyles();
 
     return (
-        <div align="center" style={{ backgroundColor:'#87a8a4'}}>
-            <Paper className={classes.container}  elevation={24} >
-
-                <Typography variant="h2" align='left' styl={{ marginBottom: '20px' }} >Sign Up</Typography>
+        <div align="center">
+            <Paper className={classes.container} elevation={10} >
+                <Avatar style={avatarStyle, { marginTop: '10px' }}>
+                    <AccountCircleIcon />
+                </Avatar>
+                <h2 style={{ margin: '10px 0 30px 0' }}>Sign Up</h2>
 
                 <form className={classes.root} noValidate autoComplete="off" align='center'>
                     <Grid lg={3} >
@@ -114,9 +119,14 @@ export default function SignUp() {
                         />
 
                     </Grid>
-                    <Button style={{width:"50vh", marginTop:'20px'}} variant="contained" color="primary">
-                        Submit
+                    <Button style={{ width: "100%", marginTop: '20px' }} variant="contained" color="primary">
+                        Sign Up
                     </Button>
+                    <Typography style={{marginTop:'10px'}}>
+                        {" "}
+                        Instead want to go back?{" "}
+                        <Link to="/Home">Home</Link>
+                    </Typography>
                 </form>
             </Paper>
         </div>
