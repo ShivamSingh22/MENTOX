@@ -124,7 +124,7 @@ export default function SignUp() {
                     </Button>
                     <Typography style={{marginTop:'10px'}}>
                         {" "}
-                        Instead want to go back?{" "}
+                        Instead want to go back ?{" "}
                         <Link to="/Home">Home</Link>
                     </Typography>
                 </form>
