@@ -5,38 +5,34 @@ import { makeStyles } from '@material-ui/core/styles';
 import Typography from '@material-ui/core/Typography';
 import Grid from '@material-ui/core/Grid';
 import Container from '@material-ui/core/Container';
-import Box from '@material-ui/core/Box';
 import Card from '@material-ui/core/Card';
 import CardActionArea from '@material-ui/core/CardActionArea';
 import CardActions from '@material-ui/core/CardActions';
 import CardContent from '@material-ui/core/CardContent';
 import CardMedia from '@material-ui/core/CardMedia';
 import Button from '@material-ui/core/Button';
-import Navbar from '../../Navbar';
-import Image from './demoPic1.jpeg';
-
+import Navbar from '../Navbar';
+import Footer from '../Footer';
 
 const useStyles = makeStyles((theme) => ({
    
 
     hero:{
        
-        backgroundImage: `url(${Image})`,
-        height:"500px",
+        backgroundImage: `url(https://raw.githubusercontent.com/Prashant142/MENTOX-1/main/mentox-frontend/src/Components/Pages/demoPic1.jpeg)`,
+        height:"90vh",
+        backgroundColor:'#d2d3ee',
         backgroundPosition:"center",
         backgroundRepeat:"no-repeat",
-        backgroundSize:"cover",
-        position:"relative",
-        display:"flex",
-        justifyContent:"center",
-        alignItems:"center",
+       justifyContent:'center',
+       textAlign:'center',
         color:"#fff349",
-        fontSize:"4rem",
+        fontSize:'10rem',
         fontfamily: "Style Script", 
-        marginTop:"70px",
      },
      blogsContainer:{
-         paddingTop:theme.spacing(3)
+         paddingTop:theme.spacing(3),
+         paddingBottom:20
      },
      blogTitle:{
          fontWeight:800,
@@ -44,27 +40,25 @@ const useStyles = makeStyles((theme) => ({
      },
      card:{
         maxWidth:"100%",
+        height : '100%'
       
      },
      media:{
          height:240
-     }
+     },
 
   }));
 
 function Blog(){
     const classes=useStyles();
     return(
-    <div>
+    <div style={{backgroundColor:'white'}}>
     <Navbar />
-     <Box className={classes.hero}>
-         <Box>
-
-         Blog Page
-         </Box>
-     </Box>
+     <Typography xs={12} align='center' style={{padding:'22vh'}} className={classes.hero} >
+       Blog
+     </Typography>
      <Container maxWidth="lg" className={classes.blogsContainer}>
-     <Typography variant= "h4" className={classes.blogTitle}>
+     <Typography variant= "h3" className={classes.blogTitle}>
          Articles
      </Typography>
      <Grid container spacing={3}>
@@ -75,7 +69,7 @@ function Blog(){
       <CardActionArea>
         <CardMedia 
           className={classes.media}
-          image="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?ixid=MnwxMjA3fDB8MHxzZWFyY2h8NHx8bXVzaWN8ZW58MHx8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"
+          image="https://www.fanawards.com/sites/default/files/styles/blog/public/blog/music2heal.png?itok=RjQYZNlU"
           title="Music Heals"
         />
         <CardContent>
@@ -89,10 +83,7 @@ function Blog(){
       </CardActionArea>
       <CardActions>
         <Button size="small" color="primary">
-          Share
-        </Button>
-        <Button size="small" color="primary">
-          Learn More
+          Read More
         </Button>
       </CardActions>
     </Card>
@@ -118,10 +109,7 @@ function Blog(){
       </CardActionArea>
       <CardActions>
         <Button size="small" color="primary">
-          Share
-        </Button>
-        <Button size="small" color="primary">
-          Learn More
+          Read More
         </Button>
       </CardActions>
     </Card>
@@ -147,10 +135,7 @@ function Blog(){
       </CardActionArea>
       <CardActions>
         <Button size="small" color="primary">
-          Share
-        </Button>
-        <Button size="small" color="primary">
-          Learn More
+          Read More
         </Button>
       </CardActions>
     </Card>
@@ -175,10 +160,7 @@ function Blog(){
       </CardActionArea>
       <CardActions>
         <Button size="small" color="primary">
-          Share
-        </Button>
-        <Button size="small" color="primary">
-          Learn More
+          Read More
         </Button>
       </CardActions>
     </Card>
@@ -203,10 +185,7 @@ function Blog(){
       </CardActionArea>
       <CardActions>
         <Button size="small" color="primary">
-          Share
-        </Button>
-        <Button size="small" color="primary">
-          Learn More
+          Read More
         </Button>
       </CardActions>
     </Card>
@@ -231,10 +210,7 @@ function Blog(){
       </CardActionArea>
       <CardActions>
         <Button size="small" color="primary">
-          Share
-        </Button>
-        <Button size="small" color="primary">
-          Learn More
+          Read More
         </Button>
       </CardActions>
     </Card>
@@ -259,10 +235,7 @@ function Blog(){
       </CardActionArea>
       <CardActions>
         <Button size="small" color="primary">
-          Share
-        </Button>
-        <Button size="small" color="primary">
-          Learn More
+          Read More
         </Button>
       </CardActions>
     </Card>
@@ -287,10 +260,7 @@ function Blog(){
       </CardActionArea>
       <CardActions>
         <Button size="small" color="primary">
-          Share
-        </Button>
-        <Button size="small" color="primary">
-          Learn More
+          Read More
         </Button>
       </CardActions>
     </Card>
@@ -318,10 +288,7 @@ function Blog(){
       </CardActionArea>
       <CardActions>
         <Button size="small" color="primary">
-          Share
-        </Button>
-        <Button size="small" color="primary">
-          Learn More
+          Read More
         </Button>
       </CardActions>
     </Card>
@@ -346,10 +313,7 @@ function Blog(){
       </CardActionArea>
       <CardActions>
         <Button size="small" color="primary">
-          Share
-        </Button>
-        <Button size="small" color="primary">
-          Learn More
+          Read More
         </Button>
       </CardActions>
     </Card>
@@ -358,10 +322,10 @@ function Blog(){
      </Grid>
 
      </Container>
+     <Footer />
     </div>
     );
 }
 
 export default Blog;
-
 

@@ -9,3 +9,5 @@ export function Button() {
     </Link>
   );
 }
+
+export default Button;

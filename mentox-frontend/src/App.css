@@ -2,15 +2,14 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  font-family: "PT Sans", sans-serif;
+  font-family: 'PT Sans', sans-serif;
 }
 
 .Home,
 .Consult,
 .Contact-us,
-.Sign-up,
-.Blog,
-.About-us {
+.Sign-up, .Blog, .About-us
+ {
   display: flex;
   height: 100vh;
   align-items: center;
@@ -18,8 +17,9 @@
   font-size: 3rem;
 }
 
+
 .About-us {
-  background-image: url("https://images.pexels.com/photos/326311/pexels-photo-326311.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
+  background-image: url('https://images.pexels.com/photos/326311/pexels-photo-326311.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940');
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -28,7 +28,7 @@
 }
 
 .Contact-us {
-  background-image: url("https://images.pexels.com/photos/326311/pexels-photo-326311.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
+  background-image: url('https://images.pexels.com/photos/326311/pexels-photo-326311.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940');
   background-position: center;
   background-size: fill;
   background-repeat: no-repeat;
@@ -37,7 +37,7 @@
 }
 
 .Blog {
-  background-image: url("https://images.pexels.com/photos/326311/pexels-photo-326311.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
+  background-image: url('https://images.pexels.com/photos/326311/pexels-photo-326311.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940');
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -46,7 +46,7 @@
 }
 
 .Sign-up {
-  background-image: url("https://images.pexels.com/photos/326311/pexels-photo-326311.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
+  background-image: url('https://images.pexels.com/photos/326311/pexels-photo-326311.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940');
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -55,11 +55,10 @@
 }
 
 .Consult {
-  background-image: url("https://images.unsplash.com/photo-1608631999167-410d2c8a3c0f?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=898&q=80");
+  background-image: url('https://images.pexels.com/photos/326311/pexels-photo-326311.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940');
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  color: rgb(26, 1, 1);
+  color: #fff;
   font-size: 100px;
-  font-family: Georgia, "Times New Roman", cursive;
 }
