@@ -50,8 +50,8 @@ function Navbar() {
                         onMouseEnter={onMouseEnter}
                         onMouseLeave={onMouseLeave}
                     >
-                        <Link to='/Consult' className='nav-links' onClick={closeMobileMenu}>
-                           Consult <i className="fas fa-caret-down"></i>
+                        <Link to='/Group' className='nav-links' onClick={closeMobileMenu}>
+                           Group <i className="fas fa-caret-down"></i>
                         </Link>
                         {dropdown && <Dropdown />}
                     </li>
