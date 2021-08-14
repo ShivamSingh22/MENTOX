@@ -304,3 +304,22 @@
   text-align: center;
   margin-top: 20px;
 }
+
+.HomeBtn{
+  /* style={{width:'100%' , background:'#512D6D' , color:"white" ,height:'6vh', fontSize:'1.5rem' }} */
+  width: 100vh;
+  background-color: #512d68;
+  color: #fff;
+  height: 7vh;
+  font-size: 1.5rem;
+  border: none;
+  border: solid 1px #2b1836;
+}
+
+.HomeBtn:hover{
+    background-color: #382452;
+}
+
+.Btn-container{
+    display: flex;
+}

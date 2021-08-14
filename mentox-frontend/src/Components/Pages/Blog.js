@@ -19,12 +19,11 @@ const useStyles = makeStyles((theme) => ({
 
     hero:{
        
-        backgroundImage: `url(https://raw.githubusercontent.com/Prashant142/MENTOX-1/main/mentox-frontend/src/Components/Pages/demoPic1.jpeg)`,
-        height:"90vh",
+        backgroundImage: `url(/Images/image.jpg)`,
+        height:"100vh",
         backgroundColor:'#d2d3ee',
         backgroundPosition:"center",
         backgroundRepeat:"no-repeat",
-       justifyContent:'center',
        textAlign:'center',
         color:"#fff349",
         fontSize:'10rem',
@@ -54,7 +53,7 @@ function Blog(){
     return(
     <div style={{backgroundColor:'white'}}>
     <Navbar />
-     <Typography xs={12} align='center' style={{padding:'22vh'}} className={classes.hero} >
+     <Typography xs={12} align='center' style={{padding:'25vh'}} className={classes.hero} >
        Blog
      </Typography>
      <Container maxWidth="lg" className={classes.blogsContainer}>

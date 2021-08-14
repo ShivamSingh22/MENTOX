@@ -9,15 +9,16 @@ function Herosection() {
 
         <div className='hero-container'>
             <video src='/videos/Background2.mp4' autoPlay loop muted />
-            <h1>FOR AN EXPERT</h1>
+            <h1>CHAT WITH US </h1>
             <img className="hero-img" src="/Images/pngegg copy 4.png" alt="home" />
             <div className='hero-btns'>
                 <Button
                     className='btns'
                     buttonStyle='btn--outline'
                     buttonSize='btn--large'
-                >
-                    Consult or Book a psychiatrist
+                    href="/Group"
+                >   
+                  Therapy by interacting
                 </Button>
             </div>
         </div>
