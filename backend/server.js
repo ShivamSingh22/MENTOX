@@ -12,9 +12,7 @@ mongoose.connection.on("error", (err) => {
   console.error(`Database connection error = ${err}`);
 });
 
-require("./Models/UserModel.js");
 require("./Models/PatientModel");
-require("./Models/VolunteerModel");
 
 const app = require("./index.js");
 const server = app.listen(4000, () => {
