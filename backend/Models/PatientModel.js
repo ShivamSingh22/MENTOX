@@ -2,6 +2,23 @@ const mongoose = require("mongoose");
 mongoose.Promise = global.Promise;
 
 const patientModel = new mongoose.Schema({
+  email: {
+    type: String,
+    required: true,
+    unique: true,
+  },
+  name: {
+    type: String,
+    default: null,
+  },
+  phone: {
+    type: String,
+    default: null,
+  },
+  address: {
+    type: String,
+    default: null,
+  },
   description: {
     type: String,
   },
@@ -10,21 +27,6 @@ const patientModel = new mongoose.Schema({
   },
   age: {
     type: String,
-  },
-  type: {
-    type: String,
-  },
-  isClarified: {
-    type: Boolean,
-    default: false,
-  },
-  _did: {
-    type: mongoose.Schema.Types.ObjectId,
-    ref: "volunteers",
-  },
-  _uid: {
-    type: mongoose.Schema.Types.ObjectId,
-    ref: "users",
   },
 });
 
