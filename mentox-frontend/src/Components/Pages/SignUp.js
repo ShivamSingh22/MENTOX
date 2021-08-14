@@ -105,7 +105,7 @@ export default function SignUp() {
                         />
 
                     </Grid>
-                    <Button  style={{ width: "100%", marginTop: '20px' }}variant="contained" color="primary">
+                    <Button  variant="contained" color="primary">
                         Register
                     </Button>
                     <Typography style={{ marginTop: '10px' }}>

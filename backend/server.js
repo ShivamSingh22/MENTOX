@@ -13,6 +13,7 @@ mongoose.connection.on("error", (err) => {
 });
 
 require("./Models/PatientModel");
+require("./Models/UserModel.js");
 
 const app = require("./index.js");
 const server = app.listen(4000, () => {
