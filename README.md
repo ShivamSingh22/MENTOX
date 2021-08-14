@@ -1,5 +1,5 @@
 <h1 align="center">MENTOX</h1>
-<h4 align="center">The place for Mental Detox</h4>
+<h3 align="center">The place for Mental Detox</h3>
 
 <img align = "right" src = "https://media3.giphy.com/media/l2JI2mPaSo65tSwHm/200w.webp?cid=ecf05e47xuyegwn08ys5dr5bp2fg0ooct5shkhjamrc1jca4&rid=200w.webp&ct=g" width = "400" >
 
