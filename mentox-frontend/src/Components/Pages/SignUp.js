@@ -2,11 +2,6 @@ import React from 'react';
 import TextField from '@material-ui/core/TextField';
 import { makeStyles } from '@material-ui/core/styles';
 import { Grid, Paper, Avatar, Button, Typography } from '@material-ui/core';
-import Radio from '@material-ui/core/Radio';
-import RadioGroup from '@material-ui/core/RadioGroup';
-import FormControlLabel from '@material-ui/core/FormControlLabel';
-import FormControl from '@material-ui/core/FormControl';
-import FormLabel from '@material-ui/core/FormLabel';
 import AccountCircleIcon from '@material-ui/icons/AccountCircle';
 import { Link } from 'react-router-dom';
 
@@ -17,15 +12,16 @@ const useStyles = makeStyles((theme) => ({
 
         '& .MuiTextField-root': {
             margin: theme.spacing(1),
-            width: '50vh'
+            width: '50vh',
         }
     },
     container: {
-        margin: '15vh 0 20vh 0',
-        width: '100vh',
+        margin: '15vh 20vh 20vh 20vh',
+        width: 'auto',
         alignSelf: 'center',
         height: '100%',
-        padding: '10px 30px 30px 30px'
+        padding: '10px 30px 30px 30px',
+        backgroundColor:'#cec3db'
     },
 }));
 
@@ -54,21 +50,6 @@ export default function SignUp() {
                             variant="outlined"
                         />
                         <TextField
-                            password
-                            id="outlined-password-input"
-                            label="Password"
-                            type="password"
-                            autoComplete="current-password"
-                            variant="outlined"
-                        />
-                        <TextField
-                            id="outlined-password-input"
-                            label="Confirm Password"
-                            type="password"
-                            autoComplete="current-password"
-                            variant="outlined"
-                        />
-                        <TextField
                             required
                             id="outlined-required"
                             label="Choose a User Name"
@@ -87,14 +68,12 @@ export default function SignUp() {
                             type="numbers"
                             variant="outlined"
                         />
-                        <FormControl style={{ marginTop: '10px', marginBottom: '15px' }} component="fieldset" className={classes.radio}>
-                            <FormLabel component="legend">Your age group ?</FormLabel>
-                            <RadioGroup aria-label="Age" name="Age" value={value} onChange={handleChange}>
-                                <FormControlLabel value="18-29" control={<Radio />} label="18-29" />
-                                <FormControlLabel value="30-44" control={<Radio />} label="30-44" />
-                                <FormControlLabel value="45-65" control={<Radio />} label="45-65" />
-                            </RadioGroup>
-                        </FormControl>
+                        <TextField
+                            id="outlined-number"
+                            label="Enter your age"
+                            type="numbers"
+                            variant="outlined"
+                        />
                         <TextField
                             id="outlined-full-width"
                             label="Required *"
@@ -120,7 +99,7 @@ export default function SignUp() {
 
                     </Grid>
                     <Button style={{ width: "100%", marginTop: '20px' }} variant="contained" color="primary">
-                        Sign Up
+                        Register
                     </Button>
                     <Typography style={{marginTop:'10px'}}>
                         {" "}

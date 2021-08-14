@@ -75,6 +75,7 @@ function Content() {
   return (
     <Container maxWidth="xl" style={{ backgroundColor: '#d2d3ee', padding: '30px 0px 10px 0' }} align='center'>
       <div className={classes.root}>
+        <Typography style={{paddingBottom:"20px"}} variant="h3">For you !!</Typography>
         <Grid container direction='row'>
           <Paper square className={classes.sliderContent2} >
 
@@ -82,8 +83,8 @@ function Content() {
               <Typography align="center" style={{paddingLeft:'20px', color:'white'}} variant='h5'>{tutorialSteps[activeStep].label}</Typography>
             </Paper>
 
-            <Typography style={{ width: '65vh', padding: '0 0 0vh 15vh' }} variant='p'>{tutorialSteps[activeStep].about} <br />
-            <Button variant="contained" color="primary" style={{borderRadius:'50px' ,marginTop:"60px"}} >
+            <Typography style={{ width: '55vh', padding: '0 0 0vh 15vh' }} variant='p'>{tutorialSteps[activeStep].about} <br />
+            <Button href="/Group" variant="contained" color="primary" style={{borderRadius:'50px' ,marginTop:"60px"}} >
                Chat with them 
             </Button>
             </Typography>

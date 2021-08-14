@@ -16,7 +16,7 @@ function Herosection() {
                     className='btns'
                     buttonStyle='btn--outline'
                     buttonSize='btn--large'
-                    href="/Groups"
+                    href="/Group"
                 >   
                   Therapy by interacting
                 </Button>
