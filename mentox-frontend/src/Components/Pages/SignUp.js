@@ -12,16 +12,17 @@ const useStyles = makeStyles((theme) => ({
 
         '& .MuiTextField-root': {
             margin: theme.spacing(1),
-            width: '50vh',
+            width: '40vh',
+            flexWrap: 'warp'
         }
     },
     container: {
-        margin: '15vh 20vh 20vh 20vh',
-        width: 'auto',
+        margin: '10vh 0 10vh 0',
+        width: '60vh',
         alignSelf: 'center',
         height: '100%',
-        padding: '10px 30px 30px 30px',
-        backgroundColor:'#cec3db'
+        padding: '10px 60px 60px 60px',
+        backgroundColor: '#cec3db'
     },
 }));
 
@@ -42,20 +43,23 @@ export default function SignUp() {
                 <h2 style={{ margin: '10px 0 30px 0' }}>Sign Up</h2>
 
                 <form className={classes.root} noValidate autoComplete="off" align='center'>
-                    <Grid lg={3} >
+                    <Grid xs={3} lg={3} xl={12} >
                         <TextField
+                            fullWidth
                             required
                             id="outlined-required"
                             label="Full Name"
                             variant="outlined"
                         />
                         <TextField
+                            fullWidth
                             required
                             id="outlined-required"
                             label="Choose a User Name"
                             variant="outlined"
                         />
                         <TextField
+                            fullWidth
                             id="outlined-input"
                             label="Email"
                             type="email"
@@ -63,21 +67,24 @@ export default function SignUp() {
                             variant="outlined"
                         />
                         <TextField
+                            fullWidth
                             id="outlined-number"
                             label="Contact Number"
                             type="numbers"
                             variant="outlined"
                         />
                         <TextField
+                            fullWidth
                             id="outlined-number"
                             label="Enter your age"
                             type="numbers"
                             variant="outlined"
                         />
                         <TextField
+                            fullWidth
                             id="outlined-full-width"
                             label="Required *"
-                            style={{ width: '86vh' }}
+                            // style={{ width: '86vh' }}
                             placeholder="Address"
                             InputLabelProps={{
                                 shrink: true,
@@ -85,23 +92,23 @@ export default function SignUp() {
                             variant="outlined"
                         />
                         <TextField
-
+                            fullWidth
                             id="outlined-full-width"
                             label="Required *"
-                            style={{ marginTop: 20, width: '86vh' }}
+                            // style={{ marginTop: 20, width: '86vh' }}
                             placeholder="About You"
                             margin="normal"
                             InputLabelProps={{
                                 shrink: true,
                             }}
-                            variant="outlined"
+                            variant="standard"
                         />
 
                     </Grid>
-                    <Button style={{ width: "100%", marginTop: '20px' }} variant="contained" color="primary">
+                    <Button  style={{ width: "100%", marginTop: '20px' }}variant="contained" color="primary">
                         Register
                     </Button>
-                    <Typography style={{marginTop:'10px'}}>
+                    <Typography style={{ marginTop: '10px' }}>
                         {" "}
                         Instead want to go back ?{" "}
                         <Link to="/Home">Home</Link>

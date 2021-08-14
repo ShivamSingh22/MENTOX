@@ -41,7 +41,7 @@ export default function Footer() {
   return (
     <div style={{ height: "100%", width: "100%" }} className={classes.root}>
       <Grid container >
-        <Grid item xs={6}>
+        <Grid item xs={12} lg={6}>
           <Typography className={classes.heading} variant="h4" align="center">
           <Link to='/Home' className={classes.content}>
           MENTOX  <i class="fas fa-brain"></i>
@@ -57,7 +57,7 @@ export default function Footer() {
             <LinkedinIcon />
           </Typography>
         </Grid>
-        <Grid item xs={3}>
+        <Grid item xs={12} lg={3}>
           <Typography style={{paddingBottom:'10px'}} className={classes.about} align='center' variant="h4">
             About Us
           </Typography>
@@ -65,7 +65,7 @@ export default function Footer() {
             This is all about this page and it is going to be amazing. Since we know that no one knows you better than your friends and family so we will connect with them as well to make sure you are doing great with the therapy. " Its your life live it 😊  " .Jan
           </Typography>
         </Grid>
-        <Grid item xs={3}>
+        <Grid item xs={12} lg={3}>
           <Typography className={classes.links} align='center' variant="h4">
             <Link to='/Contact-us' className={classes.content}>Contact Us</Link>
           </Typography>

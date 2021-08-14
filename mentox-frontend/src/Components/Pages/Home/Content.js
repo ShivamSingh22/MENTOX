@@ -38,10 +38,11 @@ const useStyles = makeStyles((theme) => ({
     alignItems: 'center',
     height: 300,
     borderRadius: '10px 10px 10px 0px',
-    width: '40%',
+    width: '50%',
+    boxShadow:"5px 0px 0px 0px  #645bb5",
     marginLeft: '-32px',
     paddingLeft: theme.spacing(4),
-    backgroundColor: '#11052c',
+    backgroundColor: '#867AE9',
   },
   sliderContent2: {
     display: 'flex',
@@ -50,7 +51,7 @@ const useStyles = makeStyles((theme) => ({
     width: '100%',
     borderRadius: '10px 10px 0px 0px',
     paddingLeft: theme.spacing(4),
-    backgroundColor: '#53b8bb',
+    backgroundColor: '#FFCEAD',
   },
 }));
 
@@ -80,10 +81,10 @@ function Content() {
           <Paper square className={classes.sliderContent2} >
 
             <Paper align="left" className={classes.sliderContent1}>
-              <Typography align="center" style={{paddingLeft:'20px', color:'white'}} variant='h5'>{tutorialSteps[activeStep].label}</Typography>
+              <Typography align="center" style={{paddingLeft:'auto', color:'white'}} variant='h5'>{tutorialSteps[activeStep].label}</Typography>
             </Paper>
 
-            <Typography style={{ width: '55vh', padding: '0 0 0vh 15vh' }} variant='p'>{tutorialSteps[activeStep].about} <br />
+            <Typography style={{ width: '100%', padding:'0 20px 0 20px'}} variant='p'>{tutorialSteps[activeStep].about} <br />
             <Button href="/Group" variant="contained" color="primary" style={{borderRadius:'50px' ,marginTop:"60px"}} >
                Chat with them 
             </Button>
