@@ -50,14 +50,14 @@ function Navbar() {
                         onMouseEnter={onMouseEnter}
                         onMouseLeave={onMouseLeave}
                     >
-                        <Link to='/Consult' className='nav-links' onClick={closeMobileMenu}>
-                           Consult <i className="fas fa-caret-down"></i>
+                        <Link to='/About-us' className='nav-links' onClick={closeMobileMenu}>
+                           About Us <i className="fas fa-caret-down"></i>
                         </Link>
                         {dropdown && <Dropdown />}
                     </li>
                     <li className="nav-item">
-                        <Link to='/login' className='nav-links-mobile' onClick={closeMobileMenu}>
-                            Log In
+                        <Link to='/Groups' className='nav-links-mobile' onClick={closeMobileMenu}>
+                            Groups
                         </Link>
                     </li>
                 </ul>

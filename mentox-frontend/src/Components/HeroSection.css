@@ -28,6 +28,10 @@ video {
       width: 300px;
       height: 300px;
   }
+  .btns{
+    text-decoration: none;
+  }
+
   
   .hero-container > p {
     margin-top: 8px;
@@ -48,6 +52,7 @@ video {
   .hero-btns .btn:hover{
       background-color: rgb(72, 36, 94);
       border: none;
+      border-radius: 20px;
       transition: 0.3s ease-in-out;
   }
   
