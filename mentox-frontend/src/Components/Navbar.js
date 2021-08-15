@@ -56,8 +56,8 @@ function Navbar() {
                         {dropdown && <Dropdown />}
                     </li>
                     <li className="nav-item">
-                        <Link to='/Groups' className='nav-links-mobile' onClick={closeMobileMenu}>
-                            Groups
+                        <Link to='/Group' className='nav-links-mobile' onClick={closeMobileMenu}>
+                            Group
                         </Link>
                     </li>
                 </ul>

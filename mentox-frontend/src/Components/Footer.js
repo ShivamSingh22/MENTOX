@@ -24,7 +24,8 @@ const useStyles = makeStyles((theme) => ({
   },
   links: {
     fontSize: 20,
-    paddingTop: 50
+    paddingTop: 40,
+    paddingBottom:10
 
   },
   content: {
@@ -59,7 +60,7 @@ export default function Footer() {
         </Grid>
         <Grid item xs={12} lg={3}>
           <Typography style={{ paddingBottom: '10px' }} className={classes.about} align='center' variant="h4">
-            About Us
+            <Link style={{textDecoration:'none' , color:'white'}} to='/About-us'>About Us</Link>
           </Typography>
           <Typography align='center' variant="caption">
             This is all about this page and it is going to be amazing. Since we know that no one knows you better than your friends and family so we will connect with them as well to make sure you are doing great with the therapy. " Its your life live it 😊  " .Jan

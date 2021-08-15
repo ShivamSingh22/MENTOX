@@ -31,7 +31,7 @@ const useStyles = makeStyles((theme) => ({
     paddingBottom: 20,
   },
   blogTitle: {
-    fontWeight: 800,
+    fontWeight: 600,
     paddingBottom: theme.spacing(3),
   },
   card: {
