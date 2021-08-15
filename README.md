@@ -17,5 +17,5 @@
 
 - **React.js**
 - **Material-UI**
-- **Chat-engine**
+- **Chat-engine(Socket.io)**
 
