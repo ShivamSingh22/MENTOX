@@ -9,7 +9,7 @@
 
 - [GROUP CHAT APP FOR SOCIAL INTERACTION]
 
-- [CHAT APP authentication]- default login credentials for app test. {Username- "Default123" Password-"123123"}
+- [CHAT APP authentication- default login credentials for app test. {Username- "Default123" Password-"123123"}]
 
 - [BLOG PAGE]
 
