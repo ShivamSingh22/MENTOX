@@ -27,11 +27,7 @@ const useStyles = makeStyles((theme) => ({
 }));
 
 export default function SignUp() {
-    // const [value, setValue] = React.useState('female');
 
-    // const handleChange = (event) => {
-    //     setValue(event.target.value);
-    // };
     const classes = useStyles();
 
     return (
