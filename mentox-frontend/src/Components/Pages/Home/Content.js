@@ -76,7 +76,7 @@ function Content() {
   return (
     <Container maxWidth="xl" style={{ backgroundColor: '#d2d3ee', padding: '30px 0px 10px 0' }} align='center'>
       <div className={classes.root}>
-        <Typography style={{paddingBottom:"20px"}} variant="h3">For you !!</Typography>
+        <Typography style={{paddingBottom:"20px"}} variant="h3">Recommended For You !!</Typography>
         <Grid container direction='row'>
           <Paper square className={classes.sliderContent2} >
 

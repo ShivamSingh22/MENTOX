@@ -6,7 +6,7 @@ import FacebookIcon from "@material-ui/icons/Facebook";
 import InstagramIcon from "@material-ui/icons/Instagram";
 import GithubIcon from "@material-ui/icons/GitHub";
 import LinkedinIcon from "@material-ui/icons/LinkedIn";
-import {Link} from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -22,14 +22,14 @@ const useStyles = makeStyles((theme) => ({
     fontSize: 20,
     paddingTop: 40,
   },
-  links:{
-    fontSize: 15,
-    paddingTop:40
-    
+  links: {
+    fontSize: 20,
+    paddingTop: 50
+
   },
-  content:{
+  content: {
     color: 'white',
-    textDecoration:'none',
+    textDecoration: 'none',
   }
 }));
 
@@ -43,9 +43,9 @@ export default function Footer() {
       <Grid container >
         <Grid item xs={12} lg={6}>
           <Typography className={classes.heading} variant="h4" align="center">
-          <Link to='/Home' className={classes.content}>
-          MENTOX  <i class="fas fa-brain"></i>
-          </Link>
+            <Link to='/Home' className={classes.content}>
+              MENTOX  <i class="fas fa-brain"></i>
+            </Link>
           </Typography>
           <Typography style={{ marginTop: "20px" }} align="center">
             This website is all about the mental health and meditation.
@@ -53,12 +53,12 @@ export default function Footer() {
           <Typography align="center" style={{ padding: "40px 0 30px 0" }}>
             <FacebookIcon style={{ marginRight: "30px" }} />
             <InstagramIcon style={{ marginRight: "30px" }} />
-            <GithubIcon style={{ marginRight: "30px" }} />
+            <a href='https://github.com/ShivamSingh22/MENTOX' target="_blank"> <GithubIcon style={{ marginRight: "30px", color: 'white' }} /></a>
             <LinkedinIcon />
           </Typography>
         </Grid>
         <Grid item xs={12} lg={3}>
-          <Typography style={{paddingBottom:'10px'}} className={classes.about} align='center' variant="h4">
+          <Typography style={{ paddingBottom: '10px' }} className={classes.about} align='center' variant="h4">
             About Us
           </Typography>
           <Typography align='center' variant="caption">
@@ -70,10 +70,7 @@ export default function Footer() {
             <Link to='/Contact-us' className={classes.content}>Contact Us</Link>
           </Typography>
           <Typography className={classes.links} align='center' variant="h4">
-            <Link to='/About-us' className={classes.content}>Terms of Conditions</Link>
-          </Typography>
-          <Typography className={classes.links} align='center' variant="h4">
-            <Link className={classes.content}>Community</Link>
+            <a href="https://github.com/ShivamSingh22/MENTOX" target="_blank" className={classes.content}>Our Repository</a>
           </Typography>
         </Grid>
         <Grid item xs={12}>

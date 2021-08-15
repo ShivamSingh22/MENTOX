@@ -18,7 +18,7 @@ function Herosection() {
                     buttonSize='btn--large'
                     href="/Group"
                 >   
-                  Therapy by interacting
+                  Therapy by Interacting
                 </Button>
             </div>
         </div>
