@@ -27,11 +27,11 @@ const useStyles = makeStyles((theme) => ({
 }));
 
 export default function SignUp() {
-    const [value, setValue] = React.useState('female');
+    // const [value, setValue] = React.useState('female');
 
-    const handleChange = (event) => {
-        setValue(event.target.value);
-    };
+    // const handleChange = (event) => {
+    //     setValue(event.target.value);
+    // };
     const classes = useStyles();
 
     return (
@@ -95,7 +95,6 @@ export default function SignUp() {
                             fullWidth
                             id="outlined-full-width"
                             label="Required *"
-                            // style={{ marginTop: 20, width: '86vh' }}
                             placeholder="About You"
                             margin="normal"
                             InputLabelProps={{
@@ -105,12 +104,11 @@ export default function SignUp() {
                         />
 
                     </Grid>
-                    <Button  variant="contained" color="primary">
+                    <Button variant="contained" color="primary">
                         Register
                     </Button>
                     <Typography style={{ marginTop: '10px' }}>
-                        {" "}
-                        Instead want to go back ?{" "}
+                        Instead want to go back ?
                         <Link to="/Home">Home</Link>
                     </Typography>
                 </form>
