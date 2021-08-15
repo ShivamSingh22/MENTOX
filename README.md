@@ -20,3 +20,19 @@
 - **Node.js**
 - **MongoDB**
 
+## 🌱 How to run!
+
+- **Clone the repository to your local machine** 
+- git clone https://github.com/ShivamSingh22/MENTOX
+- 
+- **Open the cloned folder in terminal**
+- 
+- **Go to mentox-frontend**
+- cd mentox-frontend
+- 
+- **Install npm dependencies**
+- npm i
+- 
+- **Start npm server(react-app)**
+- npm start
+
