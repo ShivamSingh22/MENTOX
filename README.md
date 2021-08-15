@@ -17,4 +17,6 @@
 - **React.js**
 - **Material-UI**
 - **Chat-engine(Socket.io)**
+- **Node.js**
+- **MongoDB**
 
