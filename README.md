@@ -11,7 +11,7 @@
 - [GROUP CHAT APP FOR SOCIAL INTERACTION]
 
 - [CHAT APP authentication- default login credentials for app test. User1 {Username- "Default123" Password-"123123"}, User2 {Username -"Default456" Password-"123123"}]
-- To get personal credentials, reach us at singh.shivam223@gmail.com
+- To get personal credentials, reach us at singh.shivam2238@gmail.com
 - We'll prompt you when your credentials are generated.
                                                                 
 
